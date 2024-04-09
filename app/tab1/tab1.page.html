@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="conteudo animate__animated animate__fadeInLeft">
+    <img class="img-item" src="/assets/home.png" alt="Imagem de Solidariedade">
+    <p>
+      Existem pessoas precisando muito da sua ajuda! Veja abaixo como ajudar 👇​
+    </p>
+    <ion-card [routerLink]="['/tabs/tab2']">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="/assets/doar.png" alt="">
+        </ion-thumbnail>
+        <ion-label>Quero Doar</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card [routerLink]="['/tabs/tab3']">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="/assets/receber.png" alt="">
+        </ion-thumbnail>
+        <ion-label>Preciso de Doações</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>
